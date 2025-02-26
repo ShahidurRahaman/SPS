@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./Images/Background.png);
+    background-size: cover;
+    font-family: "DynaPuff", serif;
+    color: white;
+    height: 100%;
+    animation: fade-in 1s;
+    cursor: default;
+}
+
+.welcome {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    margin-top: 25vh;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.tutorial {
+    margin: auto;
+    font-size: 13px;
+}
+.play{
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    background: linear-gradient(to left, rgb(255, 203, 59) 0%,rgb(255, 120, 1) 50%, rgb(255, 203, 59) 100%);
+    box-shadow: 0 4px 15px 0 rgba(196, 135, 49, 0.75);
+    border-style: none;
+    border-radius: 40px;
+    width: 15vw;
+    height: 10vh;
+
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+.play:hover {
+    background-position: right center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 0px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    body{
+        background-image: url(./Images/Mobile.png);
+        background-size: 130%;
+        background-position: -10vw 0px;
+    }
+    .welcome{
+        width: 80%;
+        margin-top: 15vh;
+    }
+    .title{
+        padding: 0px 5vw;
+        font-size: 70px;
+    }
+    .play{
+        width: 70vw;
+        height: 8vh;
+    }
+    .footer{
+        font-size: 1.5vh;
+    }
+}
