@@ -11,7 +11,7 @@ function autochoiceshow(){
     let phand=document.getElementById("comp-hand");
     if (compCh == 1){
         phand.style.cssText=`
-        background-image: url(/Images/Stone.png);
+        background-image: url(./Images/Stone.png);
         transform: scaleX(-1);
         background-size: cover;
         background-repeat: no-repeat;
@@ -22,7 +22,7 @@ function autochoiceshow(){
     else if(compCh==2){
         phand.style.cssText=`
         transform: scaleX(-1);
-        background-image: url(/Images/Paper.png); 
+        background-image: url(./Images/Paper.png); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 45vw;
@@ -32,7 +32,7 @@ function autochoiceshow(){
     else{
         phand.style.cssText=`
         transform: scaleX(-1);
-        background-image: url(/Images/Scissors.png); 
+        background-image: url(./Images/Scissors.png); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 45vw;
@@ -47,7 +47,7 @@ function choice(){
     let phand=document.getElementById("player-hand");
     if (Ch == 1){
         phand.style.cssText=`
-        background-image: url(/Images/Stone.png); 
+        background-image: url(./Images/Stone.png); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 45vw;
@@ -56,7 +56,7 @@ function choice(){
     }
     else if(Ch==2){
         phand.style.cssText=`
-        background-image: url(/Images/Paper.png); 
+        background-image: url(./Images/Paper.png); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 45vw;
@@ -65,7 +65,7 @@ function choice(){
     }
     else{
         phand.style.cssText=`
-        background-image: url(/Images/Scissors.png); 
+        background-image: url(./Images/Scissors.png); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 45vw;
